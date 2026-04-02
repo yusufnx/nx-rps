@@ -40,12 +40,18 @@ function play(choice) {
     const message = determineWinner(choice);
 
     gameAlert.textContent = message;
-    gameAlert.classList.remove('text-emerald-500', 'text-red-500');
+    gameAlert.classList.remove(
+        'text-emerald-500',
+        'text-red-500',
+        'text-yellow-500',
+    );
 
     if (message.includes('User Won!')) {
         gameAlert.classList.add('text-emerald-500');
     } else if (message.includes('Computer Won!')) {
         gameAlert.classList.add('text-red-500');
+    } else if (message.includes('The game is a tie!')) {
+        gameAlert.classList.add('text-yellow-500');
     }
 }
 
