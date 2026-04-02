@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="nero" />
+        <meta name="description" content="neroaex.dev" />
+        <title>nx - rock paper scissors</title>
+        <link rel="stylesheet" href="/src/main.css" />
+    </head>
+    <body
+        class="flex flex-col items-center gap-8 justify-start bg-[#0f0f0f] text-[#F2EDED] selection:bg-[#F2EDED] selection:text-[#0f0f0f] font-mono my-4"
+    >
+        <header class="">
+            <section
+                class="bg-zinc-900 border border-[#262626] text-center space-y-2 rounded-xl py-6 px-12"
+            >
+                <h1 class="text-2xl">Welcome to nx-rps!</h1>
+                <p class="text-sm">
+                    Your favorite rock paper scissors website!
+                </p>
+            </section>
+        </header>
+        <main class="">
+            <!-- playGame -->
+            <section class="flex flex-col items-center justify-center gap-8">
+                <h2 id="gameAlert" class="text-2xl">Choose!</h2>
+                <!-- choices -->
+                <section class="flex items-center justify-center gap-4">
+                    <div>
+                        <button
+                            id="rockChoice"
+                            class="bg-[#161616] px-4 py-2 border border-[#323232] active:bg-zinc-800 hover:bg-zinc-900 cursor-pointer"
+                            type="button"
+                        >
+                            Rock
+                        </button>
+                    </div>
+                    <div>
+                        <button
+                            id="paperChoice"
+                            class="bg-[#161616] px-4 py-2 border border-[#323232] active:bg-zinc-800 hover:bg-zinc-900 cursor-pointer"
+                            type="button"
+                        >
+                            Paper
+                        </button>
+                    </div>
+                    <div>
+                        <button
+                            id="scissorsChoice"
+                            class="bg-[#161616] px-4 py-2 border border-[#323232] active:bg-zinc-800 hover:bg-zinc-900 cursor-pointer"
+                            type="button"
+                        >
+                            Scissors
+                        </button>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="/src/main.js"></script>
+    </body>
+</html>
